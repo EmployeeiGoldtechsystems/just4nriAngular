@@ -1,0 +1,134 @@
+body{        
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto; /* Center the DIV horizontally */
+}
+
+.containerfooter{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: arial black;
+    
+}
+.img
+{
+    margin-top: 50px;
+}
+
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background:#007bff;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+.fixed-header{
+    top: 0;
+}
+.fixed-footer{
+    bottom: 0;
+}    
+/* Some more styles to beutify this example */
+ nav a{
+    color:blue;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: inline-block;
+    
+   
+} 
+.container p{
+    line-height: 200px; /* Create scrollbar to test positioning */
+}
+
+
+
+
+
+
+/* Another HTML file */
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  } */
+
+  .dropdown:hover>.dropdown-menu
+  {
+      display: block;
+  }
+  .dropdown-item
+  {
+      background-color:white;
+  }
+  .nav-link
+  {
+      color:blue;
+  }
+
+  .container p{
+    line-height: 200px; /* Create scrollbar to test positioning */
+} 

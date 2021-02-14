@@ -1,0 +1,57 @@
+<p>other works!</p>
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <div id ="UI">
+          <form [formGroup]="enquiryForm" (ngSubmit)="collectData()"  class="form-container text-center"><br>
+            <h3 class="text-center">NRI OTHER SERVICES</h3><br>
+        
+                <label>Name</label>
+                  <input type="text" (keypress)="AcceptCharacterOnly($event)" name="f_name" class="form-control" formControlName="f_name" placeholder=" Name">
+                  <small *ngIf="enquiryForm.get('f_name')?.invalid && enquiryForm.get('f_name')?.touched"class="text-danger">* Name is required</small><br>
+            
+  
+            <label>E-mail ID</label>
+              <input type="email" name="email" class="form-control" formControlName="mail" placeholder="Mail ID">
+              <small *ngIf="enquiryForm.get('mail')?.invalid && enquiryForm.get('mail')?.touched" class="text-danger">Mail-ID is required</small>
+              <br>
+              
+              <div class="row">
+                <div class="col-lg-6">
+                                  <label>Mobile Number</label>
+                  <input type="text" name="phone" id='phone' class="form-control" (keypress)="AcceptNumbersOnly($event)" formControlName="phone" placeholder="Mobile Number">
+                  <small *ngIf="enquiryForm.get('phone')?.invalid && enquiryForm.get('phone')?.touched" class="text-danger">Phone Number is required</small><br>
+                </div>
+                
+                <div class="col-lg-6">
+                                  <label>What'sapp Number</label>
+                  <input type="text" name="whatsapp" id='whatsapp' class="form-control" (keypress)="AcceptNumbersOnly($event)" formControlName="whatsapp" placeholder="What'sapp Number" ><br>
+                  <small *ngIf="enquiryForm.get('whatsapp')?.invalid && enquiryForm.get('whatsapp')?.touched" class="text-danger">What'sapp Number is required</small><br>
+                </div>
+                <label>Enter Your Need</label>
+                <input type="textarea" (keypress)="AcceptCharacterOnly($event)" name="need" class="form-control" formControlName="need" placeholder=" Enter Your Need">
+                <small *ngIf="enquiryForm.get('need')?.invalid && enquiryForm.get('need')?.touched"class="text-danger">* Name is required</small><br>
+                
+                <button type="submit" [disabled]="enquiryForm.invalid" class="btn btn-danger btn-block">SUBMIT</button>
+              </div>
+          
+          </form>
+  
+        </div>
+    </div>
+  </div>
+  </div>
+  
+  
+  
+    
+  
+  
+  
+  
+   
+
+

@@ -1,0 +1,50 @@
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        
+      </div>
+      <div class="col-lg-6">
+        <div id ="UI">
+          <form [formGroup]="enquiryForm" (ngSubmit)="collectData()"  class="form-container text-center"><br>
+            <h3 class="text-center"> <b>NRI RELIGIOUS  SERVICES</b></h3><br>
+        
+                <label><b>Name</b></label>
+                  <input type="text" (keypress)="AcceptCharacterOnly($event)" name="f_name" class="form-control" formControlName="f_name" placeholder=" Name">
+                  <small *ngIf="enquiryForm.get('f_name')?.invalid && enquiryForm.get('f_name')?.touched"class="text-danger">* Name is required</small><br>
+            
+  
+            <label><b>E-mail ID</b></label>
+              <input type="email" name="email" class="form-control" formControlName="mail" placeholder="Mail ID">
+              <small *ngIf="enquiryForm.get('mail')?.invalid && enquiryForm.get('mail')?.touched" class="text-danger">Mail-ID is required</small>
+              <br>
+              
+              <div class="row">
+                <div class="col-lg-6">
+                                  <label><b>Mobile Number</b></label>
+                  <input type="text" name="phone" id='phone' class="form-control" (keypress)="AcceptNumbersOnly($event)" formControlName="phone" placeholder="Mobile Number">
+                  <small *ngIf="enquiryForm.get('phone')?.invalid && enquiryForm.get('phone')?.touched" class="text-danger">Phone Number is required</small><br>
+                </div>
+                
+                <div class="col-lg-6">
+                                  <label><b>What'sapp Number</b></label>
+                  <input type="text" name="whatsapp" id='whatsapp' class="form-control" (keypress)="AcceptNumbersOnly($event)" formControlName="whatsapp" placeholder="What'sapp Number" ><br>
+                  <small *ngIf="enquiryForm.get('whatsapp')?.invalid && enquiryForm.get('whatsapp')?.touched" class="text-danger">What'sapp Number is required</small><br>
+                </div>
+            
+                
+                <button type="submit" [disabled]="enquiryForm.invalid" class="btn btn-danger btn-block"><B>SUBMIT</B></button>
+                
+              </div>
+          
+          </form>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+    
